@@ -88,7 +88,7 @@ answers — this avoids double-counting if a user navigates back and forth.
 2. **Upload your code.** Easiest way — open a **Bash console** on PythonAnywhere
    and clone your GitHub repo:
    ```bash
-   git clone https://github.com/<your-username>/cyber-quiz-app.git
+   git clone https://github.com/IdreesYousofzai/cyber-quiz-app.git
    ```
 
 3. **Create a virtual environment** in the same Bash console:
@@ -127,8 +127,6 @@ answers — this avoids double-counting if a user navigates back and forth.
 9. Click the big green **Reload** button at the top of the Web tab.
 
 10. Visit `https://<your-username>.pythonanywhere.com` — your quiz is live!
-
-Update the live demo link at the top of this README once deployed.
 
 ---
 
