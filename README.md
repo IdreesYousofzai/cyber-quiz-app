@@ -7,6 +7,8 @@ development portfolio.
 
 **🔗 Live demo:** https://idrees200.pythonanywhere.com/
 
+<img width="689" height="401" alt="image" src="https://github.com/user-attachments/assets/1477b084-1144-4d0a-bc71-e5bc56b0d81a" />
+
 ---
 
 ## Features
