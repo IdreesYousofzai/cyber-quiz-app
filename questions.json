@@ -1,0 +1,167 @@
+[
+  {
+    "question": "What does the acronym 'phishing' refer to in cyber security?",
+    "options": [
+      "A type of malware that encrypts files for ransom",
+      "A social engineering attack that tricks users into revealing sensitive information",
+      "A method of intercepting network traffic",
+      "A brute-force password cracking technique"
+    ],
+    "answer": 1,
+    "explanation": "Phishing is a social engineering attack, usually via email or fake websites, designed to trick victims into giving up passwords, card details, or other sensitive data."
+  },
+  {
+    "question": "Which of the following best describes 'ransomware'?",
+    "options": [
+      "Software that displays unwanted adverts",
+      "Malware that encrypts a victim's files and demands payment for the decryption key",
+      "A firewall configuration tool",
+      "A type of two-factor authentication"
+    ],
+    "answer": 1,
+    "explanation": "Ransomware encrypts a victim's data and demands a ransom (often in cryptocurrency) in exchange for the decryption key."
+  },
+  {
+    "question": "What is the main purpose of a firewall?",
+    "options": [
+      "To speed up internet connections",
+      "To back up data automatically",
+      "To monitor and control incoming and outgoing network traffic based on security rules",
+      "To encrypt emails"
+    ],
+    "answer": 2,
+    "explanation": "A firewall acts as a barrier between trusted and untrusted networks, filtering traffic according to defined security rules."
+  },
+  {
+    "question": "What does 'MFA' stand for in the context of account security?",
+    "options": [
+      "Multi-Factor Authentication",
+      "Managed File Access",
+      "Malware Filtering Algorithm",
+      "Media File Archive"
+    ],
+    "answer": 0,
+    "explanation": "Multi-Factor Authentication requires two or more verification methods (e.g. password plus a code from an app) to confirm a user's identity."
+  },
+  {
+    "question": "Which attack involves overwhelming a server with traffic to make it unavailable?",
+    "options": [
+      "SQL Injection",
+      "Cross-Site Scripting (XSS)",
+      "Denial-of-Service (DoS)",
+      "Man-in-the-Middle"
+    ],
+    "answer": 2,
+    "explanation": "A Denial-of-Service attack floods a system with traffic or requests, exhausting its resources so legitimate users cannot access it."
+  },
+  {
+    "question": "What is 'SQL Injection'?",
+    "options": [
+      "A technique to speed up database queries",
+      "A method of inserting malicious SQL code into an input field to manipulate a database",
+      "A type of encryption algorithm",
+      "A network scanning tool"
+    ],
+    "answer": 1,
+    "explanation": "SQL Injection exploits poorly sanitised user input to insert malicious SQL statements, potentially exposing or altering database data."
+  },
+  {
+    "question": "What does 'HTTPS' provide that plain 'HTTP' does not?",
+    "options": [
+      "Faster page loading",
+      "Automatic ad blocking",
+      "Encrypted communication between browser and server",
+      "Free domain hosting"
+    ],
+    "answer": 2,
+    "explanation": "HTTPS uses TLS/SSL to encrypt data in transit between the browser and server, protecting it from eavesdropping and tampering."
+  },
+  {
+    "question": "What is a 'zero-day' vulnerability?",
+    "options": [
+      "A flaw that has existed for zero days and is already patched",
+      "A vulnerability that is publicly known and well documented",
+      "A flaw unknown to the vendor with no available patch, exploitable before a fix exists",
+      "A vulnerability that only affects outdated hardware"
+    ],
+    "answer": 2,
+    "explanation": "A zero-day vulnerability is one the vendor hasn't discovered or patched yet, giving defenders 'zero days' to prepare before it can be exploited."
+  },
+  {
+    "question": "Which of the following is the strongest example of a good password practice?",
+    "options": [
+      "Using the same password across all accounts for consistency",
+      "Using a long, unique passphrase combined with a password manager",
+      "Writing passwords on a sticky note near your desk",
+      "Using your name and birth year"
+    ],
+    "answer": 1,
+    "explanation": "Long, unique passphrases stored in a reputable password manager are far harder to crack and prevent one breach compromising multiple accounts."
+  },
+  {
+    "question": "What is 'social engineering' in a cyber security context?",
+    "options": [
+      "Designing user-friendly software interfaces",
+      "Manipulating people into breaking normal security procedures or revealing confidential information",
+      "Building social media platforms securely",
+      "A method of encrypting social media data"
+    ],
+    "answer": 1,
+    "explanation": "Social engineering exploits human psychology, such as trust or urgency, rather than technical flaws, to gain unauthorised access or information."
+  },
+  {
+    "question": "What does 'encryption' do to data?",
+    "options": [
+      "Deletes it permanently",
+      "Compresses it to save storage space",
+      "Converts it into a coded form that can only be read with the correct key",
+      "Makes it load faster on websites"
+    ],
+    "answer": 2,
+    "explanation": "Encryption transforms readable data (plaintext) into unreadable ciphertext, which can only be reversed with the correct decryption key."
+  },
+  {
+    "question": "What is the purpose of a VPN (Virtual Private Network)?",
+    "options": [
+      "To create an encrypted tunnel for internet traffic, hiding it from outside observers",
+      "To permanently block all cookies",
+      "To increase your device's storage capacity",
+      "To automatically update your operating system"
+    ],
+    "answer": 0,
+    "explanation": "A VPN routes traffic through an encrypted tunnel to a remote server, masking the user's IP address and protecting data from interception."
+  },
+  {
+    "question": "Under the UK's Computer Misuse Act 1990, which of the following is a criminal offence?",
+    "options": [
+      "Using a licensed antivirus program",
+      "Reporting a discovered vulnerability responsibly to a vendor",
+      "Gaining unauthorised access to a computer system without permission",
+      "Setting up a personal firewall"
+    ],
+    "answer": 2,
+    "explanation": "The Computer Misuse Act 1990 makes it illegal to access computer systems or data without authorisation, even if no damage is caused."
+  },
+  {
+    "question": "What is 'malware'?",
+    "options": [
+      "A hardware component used to store passwords",
+      "Any software intentionally designed to cause damage or gain unauthorised access to a system",
+      "A type of legitimate system update",
+      "A protocol used for secure email"
+    ],
+    "answer": 1,
+    "explanation": "Malware is an umbrella term covering viruses, worms, trojans, ransomware, and spyware, all designed to harm, exploit, or gain unauthorised access to systems."
+  },
+  {
+    "question": "What is the main benefit of regularly applying software patches and updates?",
+    "options": [
+      "They make the software look more modern",
+      "They fix known security vulnerabilities before attackers can exploit them",
+      "They automatically increase internet speed",
+      "They remove the need for antivirus software"
+    ],
+    "answer": 1,
+    "explanation": "Patches often fix known security flaws, so applying them promptly closes gaps that attackers could otherwise exploit."
+  }
+]

@@ -1,0 +1,374 @@
+/* ==========================================================
+   Cyber Security Quiz — Stylesheet
+   ========================================================== */
+
+:root {
+    --bg-color: #0f172a;
+    --bg-gradient-end: #1e293b;
+    --card-bg: #ffffff;
+    --text-dark: #1e293b;
+    --text-muted: #64748b;
+    --primary: #2563eb;
+    --primary-dark: #1d4ed8;
+    --accent: #06b6d4;
+    --success: #16a34a;
+    --success-bg: #dcfce7;
+    --success-border: #86efac;
+    --danger: #dc2626;
+    --danger-bg: #fee2e2;
+    --danger-border: #fca5a5;
+    --radius: 12px;
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background: linear-gradient(160deg, var(--bg-color), var(--bg-gradient-end));
+    min-height: 100vh;
+    color: var(--text-dark);
+}
+
+.page-wrapper {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 20px 60px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ---------- Header ---------- */
+.site-header {
+    padding: 28px 0 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #f1f5f9;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.logo-icon {
+    font-size: 1.6rem;
+}
+
+/* ---------- Layout ---------- */
+.content {
+    flex: 1;
+    padding-top: 10px;
+}
+
+/* ---------- Cards ---------- */
+.card {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 32px;
+    margin-bottom: 24px;
+}
+
+/* ---------- Home page ---------- */
+.home-card {
+    text-align: center;
+    padding: 48px 32px;
+}
+
+.home-icon {
+    font-size: 3rem;
+    margin-bottom: 8px;
+}
+
+.home-card h1 {
+    margin: 0 0 12px;
+    font-size: 2rem;
+    color: var(--text-dark);
+}
+
+.subtitle {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    max-width: 480px;
+    margin: 0 auto 24px;
+    line-height: 1.6;
+}
+
+.home-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 32px;
+    text-align: left;
+    display: inline-block;
+    color: var(--text-dark);
+}
+
+.home-features li {
+    margin-bottom: 10px;
+    font-size: 0.98rem;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.35);
+}
+
+.btn-large {
+    padding: 14px 36px;
+    font-size: 1.05rem;
+}
+
+/* ---------- Question page ---------- */
+.progress-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.progress-bar-track {
+    width: 100%;
+    height: 10px;
+    background: #e2e8f0;
+    border-radius: 999px;
+    overflow: hidden;
+    margin-bottom: 28px;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+    border-radius: 999px;
+    transition: width 0.3s ease;
+}
+
+.question-text {
+    font-size: 1.3rem;
+    margin: 0 0 24px;
+    line-height: 1.5;
+    color: var(--text-dark);
+}
+
+.options-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.option-btn {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    text-align: left;
+    padding: 14px 18px;
+    background: #f8fafc;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: var(--text-dark);
+    cursor: pointer;
+    transition: border-color 0.15s ease, background 0.15s ease, transform 0.1s ease;
+}
+
+.option-btn:hover {
+    border-color: var(--primary);
+    background: #eff6ff;
+    transform: translateX(2px);
+}
+
+.option-letter {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: var(--primary);
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.option-text {
+    flex: 1;
+}
+
+/* ---------- Results summary ---------- */
+.results-summary-card {
+    text-align: center;
+}
+
+.results-summary-card h1 {
+    margin-top: 0;
+}
+
+.score-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin: 12px 0 4px;
+}
+
+.score-fraction {
+    font-size: 2.6rem;
+    font-weight: 800;
+    color: var(--primary);
+}
+
+.score-grade {
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 1rem;
+    background: #eef2ff;
+    color: var(--primary-dark);
+}
+
+.score-percentage {
+    color: var(--text-muted);
+    margin-bottom: 24px;
+}
+
+/* ---------- Breakdown / review ---------- */
+.breakdown-heading {
+    color: #f1f5f9;
+    margin: 8px 0 16px;
+}
+
+.review-card {
+    padding: 22px 24px;
+    border-left: 6px solid transparent;
+}
+
+.review-correct {
+    border-left-color: var(--success);
+    background: #ffffff;
+}
+
+.review-incorrect {
+    border-left-color: var(--danger);
+    background: #ffffff;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.review-number {
+    font-weight: 700;
+    color: var(--text-muted);
+}
+
+.review-status {
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 4px 12px;
+    border-radius: 999px;
+}
+
+.status-correct {
+    background: var(--success-bg);
+    color: var(--success);
+    border: 1px solid var(--success-border);
+}
+
+.status-incorrect {
+    background: var(--danger-bg);
+    color: var(--danger);
+    border: 1px solid var(--danger-border);
+}
+
+.review-question {
+    font-weight: 600;
+    margin: 0 0 14px;
+    color: var(--text-dark);
+}
+
+.review-answers {
+    margin-bottom: 12px;
+}
+
+.answer-line {
+    margin: 4px 0;
+    font-size: 0.95rem;
+}
+
+.text-correct {
+    color: var(--success);
+    font-weight: 600;
+}
+
+.text-incorrect {
+    color: var(--danger);
+    font-weight: 600;
+}
+
+.explanation-box {
+    background: #f1f5f9;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 0.92rem;
+    color: var(--text-dark);
+    line-height: 1.5;
+}
+
+.bottom-cta {
+    text-align: center;
+    margin-top: 8px;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+    text-align: center;
+    color: #64748b;
+    font-size: 0.85rem;
+    padding-top: 20px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 600px) {
+    .card {
+        padding: 22px;
+    }
+
+    .score-fraction {
+        font-size: 2rem;
+    }
+
+    .question-text {
+        font-size: 1.1rem;
+    }
+}

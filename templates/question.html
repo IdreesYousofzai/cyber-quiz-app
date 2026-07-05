@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}Question {{ num }} of {{ total }}{% endblock %}
+
+{% block content %}
+<div class="card question-card">
+
+    <div class="progress-info">
+        <span class="question-count">Question {{ num }} of {{ total }}</span>
+        <span class="progress-percent">{{ progress_percent }}%</span>
+    </div>
+
+    <div class="progress-bar-track">
+        <div class="progress-bar-fill" style="width: {{ progress_percent }}%;"></div>
+    </div>
+
+    <h2 class="question-text">{{ question.question }}</h2>
+
+    <form method="POST" action="{{ url_for('question', num=num) }}">
+        <div class="options-list">
+            {% for option in question.options %}
+            <button type="submit" name="option" value="{{ loop.index0 }}" class="option-btn">
+                <span class="option-letter">{{ ['A', 'B', 'C', 'D'][loop.index0] }}</span>
+                <span class="option-text">{{ option }}</span>
+            </button>
+            {% endfor %}
+        </div>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block title %}Your Results{% endblock %}
+
+{% block content %}
+<div class="card results-summary-card">
+    <h1>Quiz Complete!</h1>
+    <div class="score-display">
+        <span class="score-fraction">{{ score }}/{{ total }}</span>
+        <span class="score-grade grade-{{ grade|replace('*', 'star') }}">Grade: {{ grade }}</span>
+    </div>
+    <p class="score-percentage">{{ percentage }}% correct</p>
+    <a href="{{ url_for('reset') }}" class="btn btn-primary btn-large">Try Again</a>
+</div>
+
+<div class="breakdown">
+    <h2 class="breakdown-heading">Question Review</h2>
+
+    {% for item in breakdown %}
+    <div class="card review-card {{ 'review-correct' if item.is_correct else 'review-incorrect' }}">
+        <div class="review-header">
+            <span class="review-number">Q{{ item.num }}</span>
+            <span class="review-status {{ 'status-correct' if item.is_correct else 'status-incorrect' }}">
+                {% if item.is_correct %}✅ Correct{% else %}❌ Incorrect{% endif %}
+            </span>
+        </div>
+
+        <p class="review-question">{{ item.question }}</p>
+
+        <div class="review-answers">
+            <p class="answer-line">
+                <strong>Your answer:</strong>
+                <span class="{{ 'text-correct' if item.is_correct else 'text-incorrect' }}">
+                    {{ item.user_text }}
+                </span>
+            </p>
+            {% if not item.is_correct %}
+            <p class="answer-line">
+                <strong>Correct answer:</strong>
+                <span class="text-correct">{{ item.correct_text }}</span>
+            </p>
+            {% endif %}
+        </div>
+
+        <div class="explanation-box">
+            <strong>Explanation:</strong> {{ item.explanation }}
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<div class="bottom-cta">
+    <a href="{{ url_for('reset') }}" class="btn btn-primary btn-large">Try Again</a>
+</div>
+{% endblock %}

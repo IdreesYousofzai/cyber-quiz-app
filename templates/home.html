@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Cyber Security Quiz &mdash; Home{% endblock %}
+
+{% block content %}
+<div class="card home-card">
+    <div class="home-icon">🔐</div>
+    <h1>Cyber Security Quiz</h1>
+    <p class="subtitle">
+        Test your knowledge of phishing, malware, encryption, network security,
+        and more with {{ total }} multiple-choice questions.
+    </p>
+
+    <ul class="home-features">
+        <li>✅ {{ total }} questions covering real-world cyber security concepts</li>
+        <li>✅ Instant scoring with a full explanation for every answer</li>
+        <li>✅ See exactly where you went right &mdash; and where to improve</li>
+    </ul>
+
+    <a href="{{ url_for('question', num=1) }}" class="btn btn-primary btn-large">Start Quiz</a>
+</div>
+{% endblock %}
