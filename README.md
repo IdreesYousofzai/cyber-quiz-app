@@ -59,7 +59,7 @@ answers — this avoids double-counting if a user navigates back and forth.
 
 1. Clone the repo and move into it:
    ```bash
-   git clone https://github.com/<your-username>/cyber-quiz-app.git
+   git clone https://github.com/IdreesYousofzai/cyber-quiz-app.git
    cd cyber-quiz-app
    ```
 
